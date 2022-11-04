@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Roboto, sans-serif;
+}
+
+body{
+    background-color: #222831;
+}
+/* căn giữa, sau đó padding cho myForm vào trong  */
+.cover{
+    width: 800px;
+    height: 100vh;
+    padding-top: 45px;
+    margin: 0 auto;
+}
+form,.myForm{
+    position: relative;
+}
+form {
+    width: 300px;
+    height:530px;
+    padding: 25px;
+    background-color: #EEEEEE;
+    box-shadow: 0px 15px 60px #393E46;
+    border-radius: 20px;
+}
+.img-box{
+    position: absolute;
+    top: 28px;
+    left: 280px;
+    width: 500px;
+    height: 470px;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+     z-index: -1;
+}
+.img-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.input-link{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+.input-link input{
+    border: 0;
+    padding: 0 6px;
+    font-size: 16px;
+    width: 100%;
+}
+.input-link input:focus{
+    outline: 0;
+}
+.note{
+    font-size: 12.5px;
+    color:#393E46;
+    margin-top: 12px;
+}
+.btn{
+    width: 100%;
+    margin-top: 12px;
+}
+.btn button{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    background-color: #00ADB5;
+    color: white;
+}
+.box{
+    margin-top: 8px;
+}
+.box label{
+    color: #393E46;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.box input{
+    display: block;
+    margin-top: 8px;
+}
+
+/* .slider{
+    phải có dòng -webkit code mới hoạt động  
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #393E46;
+    border-radius: 10px;
+} */
+/* gọi class slider hoặc gọi trực tiếp  */
+input[type='range']{
+   /* phải có dòng -webkit code mới hoạt động */
+    -webkit-appearance: none;
+    width: 100%;
+    height: 16px;
+    padding: 2px;
+    /* height - padding = 14px
+    => cục tròn tròn cho height = 14px
+    không bị tràn 
+    */
+    background-color: #393E46;
+    border-radius: 10px;
+}
+ 
+/* chỉnh cục tròn tròn  */
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 30px;
+    cursor: ew-resize;
+    background: #00ADB5;
+    border-radius: 12px;
+}

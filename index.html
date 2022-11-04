@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="cover">
+        <div class="myForm">
+            <form action="" method="post">
+                <div class="form-body">
+                    <div class="title">
+                        <h2>PHOTO EDITOR</h2>
+                    </div>
+                    <div class="input-link">
+                        <input type="text" id="search-box" placeholder="Enter Img URL">
+                    </div>
+                    <div class="btn">
+                        <button id="submit-button" type="button">Submit</button>
+                        <p class="note">https://source.unsplash.com/500x500?pizza</p>
+                    </div>
+                    <div class="control-menu">
+                        <div class="box">
+                            <label for="brightness-slider">Brightness ( Độ sáng )</label>
+                            <input class="slider" type="range" id="brightness-slider" min="0" max="170" value="100"
+                            oninput="updateImage()">
+                        </div>
+                        <div class="box">
+                            <label for="contrast-slider">Contrast ( Độ tương phản ) </label>
+                            <input type="range" id="contrast-slider" min="0" max="170" value="100"
+                                oninput="updateImage()">
+                        </div>
+                        <div class="box">
+                            <label for="hue-slider">Hue ( Màu sắc ) </label>
+                            <input type="range" id="hue-slider" min="0" max="360" value="0" oninput="updateImage()">
+                        </div>
+                        <div class="box">
+                            <label for="blur-slider">Blur ( Độ mờ )</label>
+                            <input type="range" id="blur-slider" min="0" max="100" value="0" oninput="updateImage()">
+                        </div>
+                        <div class="box">
+                            <label for="saturation-slider">Saturation ( Bão hòa )</label>
+                            <input type="range" id="saturation-slider" min="0" max="300" value="100"
+                                oninput="updateImage()">
+                        </div>
+                        <div class="box">
+                            <label for="sepia-slider">Sepia</label>
+                            <input type="range" id="sepia-slider" min="0" max="100" value="0" oninput="updateImage()">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="img-box">
+                <img id="img" src="https://source.unsplash.com/400x500" alt="" >
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
