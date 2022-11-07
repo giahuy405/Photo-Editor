@@ -36,7 +36,6 @@ searchBtn.addEventListener("click", searchImg);
 function updateImage() {
     var filtered =
     // chỉnh css cho cái ảnh 
-    // dùng dấu ngoặc và dấu cộng bộc ngoài biến "+ varible +" để biến chuỗi thành số 
         " brightness(" + brightness.value + "%) " +
         " contrast(" + contrast.value + "%) " +
         " blur(" + blur.value + "px) " +
