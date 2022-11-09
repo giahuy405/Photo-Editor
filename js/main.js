@@ -22,7 +22,7 @@ function searchImg() {
         img.src = inputURL.value;
         // sau đó chạy hàm default value 
         setDefaultValue();
-        // hàm delay 0.2s, để làm rỗng cái link của ngta nhập
+        // delay 0.2s, để làm rỗng cái link của ngta nhập
         setTimeout(function () {
             inputURL.value = "";
         }, 200);
@@ -31,8 +31,10 @@ function searchImg() {
         alert('Nhập URL k hợp lệ');
     }   
 }
+// ko dùng searchImg() vì nó sẽ chạy hàm ngay lập tức 
 searchBtn.addEventListener("click", searchImg);
 
+// oninput khi thay đổi thì sẽ chạy hàm này 
 function updateImage() {
     var filtered =
     // chỉnh css cho cái ảnh 
